@@ -4,7 +4,7 @@ A terminal-style personal CV website built with pure HTML, CSS and JavaScript. N
 
 ## Live Demo
 
-> [https://markakis14.github.io/portfolio-cv/](https://markakis14.github.io/portfolio-cv/)
+> [https://markakis14.github.io/cv/](https://markakis14.github.io/cv/)
 
 ## Features
 
@@ -27,8 +27,8 @@ A terminal-style personal CV website built with pure HTML, CSS and JavaScript. N
 Just open `index.html` in any browser. No installation or build step needed.
 
 ```bash
-git clone https://github.com/markakis14/portfolio-cv.git
-cd portfolio-cv
+git clone https://github.com/markakis14/cv.git
+cd cv
 open index.html
 ```
 
