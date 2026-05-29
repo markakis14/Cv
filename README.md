@@ -4,7 +4,7 @@ A terminal-style personal CV website built with pure HTML, CSS and JavaScript. N
 
 ## Live Demo
 
-> [https://markakis14.github.io/cv/](https://markakis14.github.io/cv/)
+> [https://markakis14.github.io/portfolio-cv/](https://markakis14.github.io/portfolio-cv/)
 
 ## Features
 
