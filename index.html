@@ -515,6 +515,30 @@
     el.addEventListener('mouseenter', () => cursor.style.transform = 'translate(-50%,-50%) scale(2)');
     el.addEventListener('mouseleave', () => cursor.style.transform = 'translate(-50%,-50%) scale(1)');
   });
+
+  // Arrow key section navigation
+  const sections = Array.from(document.querySelectorAll('section, footer'));
+  let isScrolling = false;
+
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+    e.preventDefault();
+
+    if (isScrolling) return;
+    isScrolling = true;
+    setTimeout(() => isScrolling = false, 700);
+
+    const scrollY = window.scrollY + window.innerHeight / 2;
+    const offsets = sections.map(s => s.getBoundingClientRect().top + window.scrollY);
+
+    let current = offsets.reduce((prev, curr, i) => Math.abs(curr - scrollY) < Math.abs(offsets[prev] - scrollY) ? i : prev, 0);
+
+    let target;
+    if (e.key === 'ArrowDown') target = sections[Math.min(current + 1, sections.length - 1)];
+    if (e.key === 'ArrowUp')   target = sections[Math.max(current - 1, 0)];
+
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 </script>
 </body>
 </html>
