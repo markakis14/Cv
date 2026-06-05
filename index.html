@@ -169,6 +169,7 @@
   .proj-card { background: var(--surface); padding: 22px; transition: background 0.2s; position: relative; }
   .proj-card:hover { background: var(--green-faint); }
   .proj-card:hover .proj-arrow { opacity: 1; }
+  .proj-card.clickable { cursor: none; }
   .proj-num { color: var(--border); font-size: 24px; font-weight: 700; margin-bottom: 10px; }
   .proj-name { color: var(--text); font-size: 12px; font-weight: 700; margin-bottom: 8px; line-height: 1.5; }
   .proj-desc { color: var(--muted); font-size: 11px; line-height: 2; margin-bottom: 14px; }
@@ -277,6 +278,7 @@
     .edu-item, .exp-item { padding-left: 16px; }
     .ref-contacts { flex-direction: column; gap: 8px; }
     footer { flex-direction: column; gap: 8px; text-align: center; padding: 20px; }
+    .proj-card.clickable { cursor: pointer; }
   }
 
   @media (max-width: 480px) {
@@ -424,7 +426,7 @@
 <section class="fade-in" id="projects">
   <div class="section-label">PROJECTS</div>
   <div class="projects-grid">
-    <div class="proj-card">
+    <div class="proj-card clickable" onclick="window.open('https://github.com/markakis14/Preventing-the-Spread-of-Airborne-Pathogens-using-Critical-Area-Risk-Assessment', '_blank')">
       <div class="proj-num">01</div>
       <div class="proj-name">Preventing the Spread of Airborne Pathogens using Critical Area Risk Assessment</div>
       <div class="proj-desc">Computational models, graph algorithms, Monte Carlo simulations, agent-based modeling. Public health strategies & pandemic prevention measures.</div>
