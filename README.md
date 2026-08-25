@@ -1,6 +1,6 @@
 # Fotis Markakis — Personal CV Website
 
-A terminal-style personal CV website built with pure HTML, CSS and JavaScript. No frameworks, no dependencies — just open the file in a browser.
+A minimalist, modern portfolio built with vanilla HTML, CSS, and JavaScript. Designed with smooth micro-interactions, dark aesthetic gradients, custom cursor behaviors, and complete responsive support for both desktop and mobile screens.
 
 ## Live Demo
 
@@ -8,9 +8,9 @@ A terminal-style personal CV website built with pure HTML, CSS and JavaScript. N
 
 ## Features
 
-- Terminal / hacker aesthetic with scanline effect
+- Modern Minimalist Aesthetic: Acid green accents, custom background grid masks, and soft radial ambient lighting
 - Custom animated cursor
-- Interactive terminal block
+- Interactive Command Palette: Instant section navigation accessible anywhere via Ctrl + K / Cmd + K or Esc.
 - Fully responsive sections: About, Education, Experience, Projects, Skills, Certifications, Volunteering, References & Contact
 - Clickable LinkedIn and GitHub links
 - Single `.html` file — zero setup required
@@ -41,4 +41,4 @@ open index.html
 
 ---
 
-© 2025 Fotis Markakis
+© 2026 Fotis Markakis
